@@ -509,6 +509,9 @@
 	
 	<script>
 		
+		String.prototype.replaceAll = function(org, dest) {
+			return this.split(org).join(dest);
+		}
 	
 		
 		var nowobj={};
