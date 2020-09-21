@@ -509,6 +509,10 @@
 	
 	<script>
 		
+		String.prototype.replaceAll = function(org, dest) {
+			return this.split(org).join(dest);
+		}
+		
 		var nowobj={};
 		var kill_media="";
 		var start_card='c1';
