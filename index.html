@@ -654,13 +654,13 @@
 				$('#main_fr').removeClass('align-items-center ');
 				$('#main_fr').css('padding-top','30px')
 			}
-			//if(navigator.userAgent.indexOf('KAKAO')>0) {
-			//	$('#btn_end').prop('href',"kakaoweb://closeBrowser");
-			//	} else {
-		//		$('#btn_end').detach();
+			if(navigator.userAgent.indexOf('KAKAO')>0) {
+				$('#btn_end').prop('href',"kakaoweb://closeBrowser");
+				} else {
+				$('#btn_end').detach();
 				
 				
-		//	}
+			}
 			
 			
 			$(document).keyup(function(event){
